@@ -8,8 +8,8 @@ mlx port of Karpath's (minbpe)[https://github.com/karpathy/minbpe]
   https://github.com/openai/gpt-2/blob/master/src/encoder.py
 
   But:
-  - Does not handle the regular expression splitting pattern.
-  - Does not handle any special tokens.
+  1) Does not handle the regular expression splitting pattern.
+  2) Does not handle any special tokens.
   ```python
   from mlx_minbpe import MLXBasicTokenizer
   tokenizer = MLXBasicTokenizer()
