@@ -5,6 +5,11 @@ mlx port of Karpath's (minbpe)[https://github.com/karpathy/minbpe]
 ```
 pip install requirements.txt
 ```
+
+## Demo
+
+https://github.com/Jaykef/mlx-minbpe/assets/11355002/52f54c27-1040-40b1-b9dd-5b022c38f7a4
+
 ## Quick Start
 ```python
 from mlx_minbpe import MLXBasicTokenizer
