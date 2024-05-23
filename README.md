@@ -3,7 +3,7 @@
 mlx port of Karpath's (minbpe)[https://github.com/karpathy/minbpe]
 
 ## Usage
-- install requirements
+- Install requirements
   ```
   pip install requirements.txt
   ```
