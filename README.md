@@ -52,7 +52,7 @@ tokenizer.save("toy")
 python train.py
 ```
 
-```
+```python
 import os
 import time
 from mlx_minbpe import MLXBasicTokenizer, MLXRegexTokenizer
