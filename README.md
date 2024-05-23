@@ -53,6 +53,7 @@ python train.py
 ```
 
 ```python
+# train.py
 import os
 import time
 from mlx_minbpe import MLXBasicTokenizer, MLXRegexTokenizer
