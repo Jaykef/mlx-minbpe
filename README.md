@@ -5,10 +5,22 @@ mlx port of Karpath's (minbpe)[https://github.com/karpathy/minbpe]
 ```
 pip install requirements.txt
 ```
-  
+## Quick Start
+```python
+from minbpe import MLXBasicTokenizer
+tokenizer = MLXBasicTokenizer()
+text = "aaabdaaabac"
+tokenizer.train(text, 256 + 3) # 256 are the byte tokens, then do 3 merges
+print(tokenizer.encode(text))
+# [258, 100, 258, 97, 99]
+print(tokenizer.decode([258, 100, 258, 97, 99]))
+# aaabdaaabac
+tokenizer.save("toy")
+# writes two files: toy.model (for loading) and toy.vocab (for viewing)
+```
 ## Usage
   
-- For the MLXBasicTokenizer: Minimal (byte-level) Byte Pair Encoding tokenizer.
+- For MLXBasicTokenizer: Minimal (byte-level) Byte Pair Encoding tokenizer.
   Algorithmically follows along the GPT tokenizer:
   https://github.com/openai/gpt-2/blob/master/src/encoder.py
   
@@ -25,7 +37,7 @@ pip install requirements.txt
   tokenizer.load("mymodel.model") # loads the model back, the vocab is just for vis
   ```
 
-- For the MLXRegexTokenizer: Unlike BasicTokenizer, it handles an optional regex splitting pattern and optional special tokens.
+- For MLXRegexTokenizer: Unlike BasicTokenizer, it handles an optional regex splitting pattern and optional special tokens.
       
   ```python
   from minbpe import MLXRegexTokenizer
