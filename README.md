@@ -7,7 +7,7 @@ pip install requirements.txt
 ```
 ## Quick Start
 ```python
-from minbpe import MLXBasicTokenizer
+from mlx_minbpe import MLXBasicTokenizer
 tokenizer = MLXBasicTokenizer()
 text = "aaabdaaabac"
 tokenizer.train(text, 256 + 3) # 256 are the byte tokens, then do 3 merges
@@ -40,7 +40,7 @@ tokenizer.save("toy")
 - For MLXRegexTokenizer: Unlike BasicTokenizer, it handles an optional regex splitting pattern and optional special tokens.
       
   ```python
-  from minbpe import MLXRegexTokenizer
+  from mlx_minbpe import MLXRegexTokenizer
   tokenizer = MLXRegexTokenizer()
   tokenizer.train(very_long_training_string, vocab_size=32768)
   tokenizer.register_special_tokens({"<|endoftext|>": 32768})
