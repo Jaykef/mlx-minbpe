@@ -3,6 +3,11 @@
 mlx port of Karpath's (minbpe)[https://github.com/karpathy/minbpe]
 
 ## Usage
+- install requirements
+  ```
+  pip install requirements.txt
+  ```
+  
 - For the MLXBasicTokenizer: Minimal (byte-level) Byte Pair Encoding tokenizer.
   Algorithmically follows along the GPT tokenizer:
   https://github.com/openai/gpt-2/blob/master/src/encoder.py
