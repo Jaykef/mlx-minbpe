@@ -3,11 +3,11 @@
 mlx port of Karpath's (minbpe)[https://github.com/karpathy/minbpe]
 
 ## Usage
-1. For the MLXBasicTokenizer: Minimal (byte-level) Byte Pair Encoding tokenizer.
-   Algorithmically follows along the GPT tokenizer:
-   https://github.com/openai/gpt-2/blob/master/src/encoder.py
-   1. Does not handle the regular expression splitting pattern.
-   2. Does not handle any special tokens.
+- For the MLXBasicTokenizer: Minimal (byte-level) Byte Pair Encoding tokenizer.
+  Algorithmically follows along the GPT tokenizer:
+  https://github.com/openai/gpt-2/blob/master/src/encoder.py
+  [ Does not handle the regular expression splitting pattern ]
+  [ Does not handle any special tokens ]
       
   ```python
   from mlx_minbpe import MLXBasicTokenizer
