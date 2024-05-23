@@ -1,6 +1,6 @@
 # mlx-minbpe
 
-mlx port of Karpath's ![minbpe](https://github.com/karpathy/minbpe)
+mlx port of Karpath's <a href="https://github.com/karpathy/minbpe">minbpe</a>
 
 ```
 pip install requirements.txt
